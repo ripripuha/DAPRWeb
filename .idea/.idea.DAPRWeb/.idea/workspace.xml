@@ -8,7 +8,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="edfcf060-203f-4329-9189-2276263c1afb" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/DAPRWeb.sln" beforeDir="false" afterPath="$PROJECT_DIR$/DAPRWeb.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.DAPRWeb/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DAPRWeb/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiClientDAPR/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ApiClientDAPR/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiClientDAPR/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ApiClientDAPR/Properties/launchSettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DAPRWebClient/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DAPRWebClient/Controllers/HomeController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DAPRWebClient/DAPRWebClient.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/DAPRWebClient/DAPRWebClient.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +26,7 @@
     <setting file="mock://C:/Repositories/ripripuha/Github/DAPRWeb/DAPRWebClient/Startup.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Repositories/ripripuha/Github/DAPRWeb/DAPRWebClient/Controllers/HomeController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Repositories/ripripuha/Github/DAPRWeb/DAPRWebClient/Views/_ViewImports.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/0fa1c7a72e1a4286b64ebd1f6621c87e33c00/9/DaprClient.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Repositories/ripripuha/Github/DAPRWeb/DAPRWebClient/Views/Home/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1woyv8ABdrjImpLuRzcZq5MwH0N" />
@@ -30,6 +35,9 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34994584" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.0" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -105,7 +113,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1629139470262</updated>
-      <workItem from="1629139472852" duration="898000" />
+      <workItem from="1629139472852" duration="4228000" />
     </task>
     <task id="LOCAL-00001" summary="intial commit..;">
       <created>1629139513453</created>
@@ -121,7 +129,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629140184948</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="ApiClientDAPR">
+      <created>1629140409304</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1629140409304</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -143,9 +158,43 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="intial commit..;" />
     <MESSAGE value="DAPR up n running!" />
-    <option name="LAST_COMMIT_MESSAGE" value="DAPR up n running!" />
+    <MESSAGE value="ApiClientDAPR" />
+    <option name="LAST_COMMIT_MESSAGE" value="ApiClientDAPR" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/DAPRWebClient/Controllers/HomeController.cs</url>
+          <line>30</line>
+          <properties documentPath="C:\Repositories\ripripuha\Github\DAPRWeb\DAPRWebClient\Controllers\HomeController.cs" initialLine="30" containingFunctionPresentation="method 'Index'">
+            <startOffsets>
+              <option value="811" />
+            </startOffsets>
+            <endOffsets>
+              <option value="900" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/ApiClientDAPR/Controllers/WeatherForecastController.cs</url>
+          <line>28</line>
+          <properties documentPath="C:\Repositories\ripripuha\Github\DAPRWeb\ApiClientDAPR\Controllers\WeatherForecastController.cs" initialLine="28" containingFunctionPresentation="method 'Get'">
+            <startOffsets>
+              <option value="805" />
+            </startOffsets>
+            <endOffsets>
+              <option value="828" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

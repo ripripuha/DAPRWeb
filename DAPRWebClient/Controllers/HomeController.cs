@@ -2,7 +2,10 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Net.Http;
+using System.Threading;
 using System.Threading.Tasks;
+using ApiClientDAPR;
 using Dapr.Client;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -26,6 +29,9 @@ namespace DAPRWebClient.Controllers
         public async Task<IActionResult> Index()
         {
             var stateValue = await _daprClient.GetStateEntryAsync<SomeState>(statestore, "some-key");
+
+            var weatherForeceast = await _daprClient.InvokeMethodAsync<IEnumerable<WeatherForecast>>(HttpMethod.Get, "api-client", "weatherforecast");
+            
             return View();
         }
 
@@ -44,6 +50,17 @@ namespace DAPRWebClient.Controllers
         public class SomeState
         {
             public string SomeProperty { get; set; }
+        }
+        
+        public class WeatherForecast
+        {
+            public DateTime Date { get; set; }
+
+            public int TemperatureC { get; set; }
+
+            public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
+
+            public string Summary { get; set; }
         }
     }
 }

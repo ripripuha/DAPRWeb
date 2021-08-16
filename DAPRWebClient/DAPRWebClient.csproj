@@ -8,4 +8,8 @@
     <PackageReference Include="Dapr.AspNetCore" Version="1.3.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ApiClientDAPR\ApiClientDAPR.csproj" />
+  </ItemGroup>
+
 </Project>
