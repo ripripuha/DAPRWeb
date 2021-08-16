@@ -8,10 +8,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="edfcf060-203f-4329-9189-2276263c1afb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/DAPRWebClient/.dockerignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DAPRWebClient/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prometheus.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DAPRWeb/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DAPRWeb/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiClientDAPR/ApiClientDAPR.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ApiClientDAPR/ApiClientDAPR.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DAPRWebClient/DAPRWebClient.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/DAPRWebClient/DAPRWebClient.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DAPRWebClient/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/DAPRWebClient/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DAPRWebClient/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DAPRWebClient/Startup.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,10 +25,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="mock://C:/Repositories/ripripuha/Github/DAPRWeb/DAPRWebClient/Startup.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Repositories/ripripuha/Github/DAPRWeb/DAPRWebClient/Controllers/HomeController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Repositories/ripripuha/Github/DAPRWeb/DAPRWebClient/Views/_ViewImports.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/0fa1c7a72e1a4286b64ebd1f6621c87e33c00/9/DaprClient.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Repositories/ripripuha/Github/DAPRWeb/DAPRWebClient/Views/Home/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1woyv8ABdrjImpLuRzcZq5MwH0N" />
   <component name="ProjectViewState">
@@ -40,6 +39,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected=".NET Launch Settings Profile.DAPRWebClient">
@@ -112,7 +112,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1629139470262</updated>
-      <workItem from="1629139472852" duration="6693000" />
+      <workItem from="1629139472852" duration="7426000" />
+      <workItem from="1629147993752" duration="2716000" />
     </task>
     <task id="LOCAL-00001" summary="intial commit..;">
       <created>1629139513453</created>
@@ -149,14 +150,21 @@
       <option name="project" value="LOCAL" />
       <updated>1629144380276</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Prometheus... init;">
+      <created>1629147469187</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1629147469187</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
-  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -168,6 +176,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
@@ -178,7 +187,8 @@
     <MESSAGE value="ApiClientDAPR" />
     <MESSAGE value="DAPR API" />
     <MESSAGE value="fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix" />
+    <MESSAGE value="Prometheus... init;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Prometheus... init;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

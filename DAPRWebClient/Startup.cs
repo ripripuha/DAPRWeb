@@ -9,6 +9,8 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Prometheus;
+using Prometheus.DotNetRuntime;
 
 namespace DAPRWebClient
 {
@@ -17,9 +19,11 @@ namespace DAPRWebClient
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
+            Collector = CreateCollector();
         }
 
         public IConfiguration Configuration { get; }
+        public static IDisposable Collector; // Coleta métricas do runtime.
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
@@ -46,6 +50,11 @@ namespace DAPRWebClient
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
+
+            // Prometheus
+            app.UseHttpMetrics();
+            app.UseMetricServer();
+            
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
@@ -59,6 +68,21 @@ namespace DAPRWebClient
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
+        }
+
+        public static IDisposable CreateCollector()
+        {
+            var builder = DotNetRuntimeStatsBuilder.Default();
+            builder = DotNetRuntimeStatsBuilder.Customize()
+                .WithContentionStats(CaptureLevel.Informational)
+                .WithGcStats(CaptureLevel.Verbose)
+                .WithThreadPoolStats(CaptureLevel.Informational)
+                .WithExceptionStats(CaptureLevel.Errors)
+                .WithJitStats();
+
+            builder.RecycleCollectorsEvery(new TimeSpan(0, 20, 0));
+
+            return builder.StartCollecting();
         }
     }
 }
